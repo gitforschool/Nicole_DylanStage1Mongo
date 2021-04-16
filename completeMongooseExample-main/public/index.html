@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>starter code</title>
+<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<h2>V2 To Do's</h2>
+<div class="grid-container">
+   
+
+
+<div  class="grid-item">
+    <h3>Existing To Dos</h3>
+    <button type="button" id=get>Show Existing</button>
+    <ul id="listUl"></ul>
+</div>
+   
+   
+   
+   
+    <div  class="grid-item">
+        <h3>Add a new ToDo</h3>
+        <label for="assignment">Assignment Name:</label>
+        <input type="text" id="assignment" name="fname"><br><br>
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="fname"><br><br>
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" name="fname"><br><br>
+        <button type="button" id=submit>SUBMIT</button>
+       
+    </div>
+
+   
+
+    <div  class="grid-item">
+        <h3>Delete ToDo by Title</h3>
+        <div>
+            Enter Title here:  <input type="text" id="deleteAssignment"><br><br>
+            <button type="button" id=delete>DELETE</button><br>
+        </div>
+    </div>
+
+   
+    <div  class="grid-item">
+        <h3>Edit one ToDo </h3>
+        <div>
+            Enter Title here:  <input type="text" id="modAssignment"><br><br>
+            <button type="button" id=find>FIND</button><br>
+        </div>
+        <div>
+            <h3>Edit these fields</h3>
+        <input type="text" id="mAssignment" ><br><br>
+        <input type="text" id="mClass" ><br><br>
+        <input type="text" id="mGrade" ><br><br>
+      
+        <button type="button" id=msubmit>SUBMIT</button>
+        </div>
+   
+    </div>
+</div>
+
+<script src="/javascripts/index.js"></script>
+</body>
+
+</html>
