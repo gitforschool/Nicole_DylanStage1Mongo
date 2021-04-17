@@ -79,7 +79,7 @@ router.delete('/DeleteAssignment/:id', function (req, res) {
 });
 
 
-router.put('/UpdateAssignment/:id', function (req, res) {
+router.put('/UpdateGradedAssignment/:id', function (req, res) {
   GradedAssignments.findOneAndUpdate(
     { _id: req.params.id },
     { assignment: req.body.assignment, class: req.body.class, grade: req.body.grade,   completed: req.body.completed },
