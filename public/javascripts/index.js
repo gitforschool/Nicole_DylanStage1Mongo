@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             document.getElementById("mAssignment").value = data[0].assignment;
             document.getElementById("mClass").value= data[0].class;
             document.getElementById("mGrade").value = data[0].grade;
-            document.getElementById("mCompleted").value = data[0].completed;
+            document.getElementById("mcompleted").value = data[0].completed;
            
 
         });
