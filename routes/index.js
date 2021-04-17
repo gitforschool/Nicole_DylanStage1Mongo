@@ -82,7 +82,7 @@ router.delete('/DeleteAssignment/:id', function (req, res) {
 router.put('/UpdateAssignment/:id', function (req, res) {
   GradedAssignments.findOneAndUpdate(
     { _id: req.params.id },
-    { assignment: req.body.assignment, assignment: req.body.assignment, assignment: req.body.assignment,   completed: req.body.completed },
+    { assignment: req.body.assignment, class: req.body.class, grade: req.body.grade,   completed: req.body.completed },
    { new: true },
     (err, assignment) => {
       if (err) {
@@ -94,7 +94,7 @@ router.put('/UpdateAssignment/:id', function (req, res) {
 
 
   /* GET one ToDos */
-router.get('/FindAsssignment/:id', function(req, res) {
+router.get('/FindAssignment/:id', function(req, res) {
   console.log(req.params.id );
   GradedAssignments.find({ _id: req.params.id }, (err, oneAssignment) => {
     if (err) {
